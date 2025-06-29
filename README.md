@@ -14,6 +14,12 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
 
 ---
 
+![Screenshot 2025-06-29 170550](https://github.com/user-attachments/assets/ceea2a5e-38cf-49c3-a58b-2d4ca5ca9618)
+---
+
+![Screenshot 2025-06-29 170609](https://github.com/user-attachments/assets/da6de280-6623-4132-9325-90f92125532d)
+---
+
 ### 📊 Financial Dashboard
 - Dynamic **Revenue vs Expense** chart with toggle views:
   - 📅 Monthly
@@ -24,10 +30,11 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
   - 📥 Revenue
   - 📤 Expenses
   - 🏦 Savings
-- ⏱ Recent transactions with avatars and real-time updates
-
+  - ⏱ Recent transactions with avatars and real-time updates
+    <hr>
 ---
-
+![Screenshot 2025-06-29 170801](https://github.com/user-attachments/assets/6fc22222-c531-4ff8-a49b-b20c730dbfaf)
+---
 ### 📁 Transactions Table
 - 🔍 Real-time search by user & status
 - 🗓 Filter by transaction date
@@ -37,6 +44,8 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
   - Green for Revenue
   - Red for Expenses
   - Colored badges for transaction status
+---
+![Screenshot 2025-06-29 182106](https://github.com/user-attachments/assets/9cfdc2f4-9b26-4ba3-9d20-8e54bd7ea08a)
 
 ---
 
@@ -46,6 +55,10 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
 - ⬇ Auto-download once report is ready
 
 ---
+![Screenshot 2025-06-29 171026](https://github.com/user-attachments/assets/47cab736-ae68-4d09-aff0-0ba76bde20c9)
+
+---
+![Screenshot 2025-06-29 171058](https://github.com/user-attachments/assets/2c00b982-d215-438d-9da2-8521953ed53a)
 
 ## 🛠 Tech Stack
 
@@ -66,6 +79,12 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
 - 📄 `json2csv` for CSV exports
 - 🍪 Cookie-parser for token management
 
+---
+![Screenshot 2025-06-29 171132](https://github.com/user-attachments/assets/fa1b2e95-8a05-419e-ba8c-bbeaee6c56d6)
+---
+![Screenshot 2025-06-29 175621](https://github.com/user-attachments/assets/2a3b3ead-4cc9-440e-9d13-e51b0e1722cc)
+---
+![Screenshot 2025-06-29 175729](https://github.com/user-attachments/assets/355d6f63-390d-4356-9444-1f9a2ade3fad)
 ---
 
 ## 📁 Folder Structure
@@ -88,3 +107,6 @@ FinancialAnalytics/
 │   └── App.tsx
 │
 └── README.md
+
+---
+
