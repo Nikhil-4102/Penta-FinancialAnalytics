@@ -6,7 +6,7 @@ const User = require("../models/User");
 const {login, signup} = require("../Controllers/Auth");
 const {auth, isUser,isAdmin} = require("../middlewares/auth");
 
-router.post("/login", login);
+router.get("/login", login);
 router.post("/signup", signup);
 
 //testing protected routes for single middleware

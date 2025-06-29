@@ -1,25 +1,30 @@
-// components/ProtectedRoute.tsx
-import React from "react";
+import type { JSX } from "react";
 import { Navigate } from "react-router-dom";
 
 interface ProtectedRouteProps {
-  children: React.ReactElement;
+  children: JSX.Element;
   allowedRoles: string[];
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, allowedRoles }) => {
+const ProtectedRoute = ({ children, allowedRoles }: ProtectedRouteProps) => {
+  const userData = localStorage.getItem("user");
   const token = localStorage.getItem("token");
-  const user = JSON.parse(localStorage.getItem("user") || "{}");
 
-  if (!token) {
-    return <Navigate to="/admin-login" />;
+  if (!token || !userData) {
+    return <Navigate to="/admin-login" replace />;
   }
 
-  if (!allowedRoles.includes(user?.role)) {
-    return <Navigate to="/unauthorized" />;
-  }
+  try {
+    const user = JSON.parse(userData);
 
-  return children;
+    if (!allowedRoles.includes(user.role)) {
+      return <Navigate to="/unauthorized" replace />;
+    }
+
+    return children;
+  } catch {
+    return <Navigate to="/admin-login" replace />;
+  }
 };
 
 export default ProtectedRoute;

@@ -15,20 +15,25 @@ const Login: React.FC = () => {
       const res = await axios.post(
         "http://localhost:4000/api/v1/login",
         { email, password },
-        { withCredentials: true } // 👈 Required for cookie-based auth
+        { withCredentials: true }
       );
 
       const { token, user } = res.data;
 
-      if (user.role === "User") {
-        localStorage.setItem("token", token); // Optional if using only cookies
-        toast.success("Login successful!", { position: "top-center" });
-        navigate("/user-dashboard"); // ✅ Update path as per your routing
-      } else {
-        toast.error("Access denied: Only user login allowed here", {
+      // ❌ Block Admins from logging in here
+      if (user.role !== "User") {
+        toast.error("Admins cannot login from this page.", {
           position: "bottom-center",
         });
+        return;
       }
+
+      // ✅ Store token and user data
+      localStorage.setItem("token", token);
+      localStorage.setItem("user", JSON.stringify(user));
+
+      toast.success("Login successful!", { position: "top-center" });
+      navigate("/user-dashboard");
     } catch (error: any) {
       toast.error(error.response?.data?.message || "Login failed", {
         position: "bottom-center",
