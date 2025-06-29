@@ -88,7 +88,7 @@ A full-stack MERN-based financial analytics dashboard to visualize revenue, mana
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fa1b2e95-8a05-419e-ba8c-bbeaee6c56d6" width="70%"/>
   <br/><br/>
-  <img src="https://github.com/user-attachments/assets/2a3b3ead-4cc9-440e-9d13-e51b0e1722cc" width="70%"/>
+  <img src="https://github.com/user-attachments/assets/fd95ac6a-0466-4dd0-8515-32fe389a4b80" width="70%"/>
   <br/><br/>
 
 ## MongoDB Compass 
