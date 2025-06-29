@@ -1,90 +1,100 @@
-# 💸 Financial Analytics Dashboard
+<h1 align="center">💸 Financial Analytics Dashboard</h1>
 
-A full-stack MERN-based financial analytics dashboard designed to help analysts visualize revenue & expenses, track transactions, and export reports seamlessly.
+<p align="center">
+A full-stack MERN-based financial analytics dashboard to visualize revenue, manage transactions, and export CSV reports.
+</p>
 
 ---
 
 ## 🚀 Features
 
 ### 🔐 Authentication & Security
-- JWT-based login/signup system  
-- Secure cookie-based token storage (HTTP-only)
-- 🔒 Protected **Admin Routes** (Only logged-in admins can access dashboard pages)
-- Role-based route guards via Express middleware
+
+- JWT-based login/signup
+- HTTP-only secure cookie storage
+- Role-based route protection
+- Admin-only access to analytics
 
 ---
 
-![Screenshot 2025-06-29 170550](https://github.com/user-attachments/assets/ceea2a5e-38cf-49c3-a58b-2d4ca5ca9618)
----
-
-![Screenshot 2025-06-29 170609](https://github.com/user-attachments/assets/da6de280-6623-4132-9325-90f92125532d)
----
-
-### 📊 Financial Dashboard
-- Dynamic **Revenue vs Expense** chart with toggle views:
-  - 📅 Monthly
-  - 📆 Weekly
-  - 📈 Yearly
-- At-a-glance summary cards:
-  - 💰 Balance
-  - 📥 Revenue
-  - 📤 Expenses
-  - 🏦 Savings
-  - ⏱ Recent transactions with avatars and real-time updates
-    <hr>
----
-![Screenshot 2025-06-29 170801](https://github.com/user-attachments/assets/6fc22222-c531-4ff8-a49b-b20c730dbfaf)
----
-### 📁 Transactions Table
-- 🔍 Real-time search by user & status
-- 🗓 Filter by transaction date
-- ⬇ Sort by date (Newest/Oldest)
-- 📦 Paginated transaction display (Show More functionality)
-- 🎨 Visual indicators:
-  - Green for Revenue
-  - Red for Expenses
-  - Colored badges for transaction status
----
-![Screenshot 2025-06-29 182106](https://github.com/user-attachments/assets/9cfdc2f4-9b26-4ba3-9d20-8e54bd7ea08a)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ceea2a5e-38cf-49c3-a58b-2d4ca5ca9618" width="48%" />
+  <img src="https://github.com/user-attachments/assets/da6de280-6623-4132-9325-90f92125532d" width="48%" />
+</div>
 
 ---
 
-### 📤 CSV Export System
-- 🧩 Column Selection: Choose which fields to export
-- 🧾 Server-side CSV generation using `json2csv`
-- ⬇ Auto-download once report is ready
+## 📊 Financial Dashboard
+
+- Dynamic Revenue vs Expense chart:
+  - Monthly, Weekly, Yearly toggle
+- Real-time summary cards:
+  - Balance, Revenue, Expenses, Savings
+- Recent transactions with avatars & timestamps
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6fc22222-c531-4ff8-a49b-b20c730dbfaf" width="90%"/>
+</p>
 
 ---
-![Screenshot 2025-06-29 171026](https://github.com/user-attachments/assets/47cab736-ae68-4d09-aff0-0ba76bde20c9)
+
+## 📁 Transactions Table
+
+- Search by user or status
+- Filter by date
+- Sort by newest/oldest
+- Paginated "Show More"
+- Color-coded badges (Green → Revenue, Red → Expenses)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9cfdc2f4-9b26-4ba3-9d20-8e54bd7ea08a" width="90%"/>
+</p>
 
 ---
-![Screenshot 2025-06-29 171058](https://github.com/user-attachments/assets/2c00b982-d215-438d-9da2-8521953ed53a)
 
-## 🛠 Tech Stack
+## 📤 CSV Export System
+
+- Column selection for export
+- CSV generated on server using `json2csv`
+- Auto-download triggered once ready
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/47cab736-ae68-4d09-aff0-0ba76bde20c9" width="80%"/>
+  <br/><br/>
+  <img src="https://github.com/user-attachments/assets/2c00b982-d215-438d-9da2-8521953ed53a" width="80%"/>
+</p>
+
+---
+
+## ⚙ Tech Stack
 
 ### 🖥 Frontend
-- ⚛️ React.js + TypeScript
-- ⚡ Vite
-- 💨 TailwindCSS
-- 📊 SharCN ( Charts )
-- 🌐 React Router DOM
-- 🔔 React Toastify for notifications
-- 📦 Axios for API communication
+- React.js + TypeScript
+- Vite
+- TailwindCSS
+- Recharts (SharCN)
+- React Router DOM
+- Axios
+- React Toastify
 
-### ⚙ Backend
-- 🟢 Node.js + Express.js
-- 🍃 MongoDB + Mongoose
-- 🔐 JWT for authentication
-- 🧂 Bcrypt for password hashing
-- 📄 `json2csv` for CSV exports
-- 🍪 Cookie-parser for token management
+### 🔧 Backend
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT + Bcrypt
+- Cookie-parser
+- json2csv
 
----
-![Screenshot 2025-06-29 171132](https://github.com/user-attachments/assets/fa1b2e95-8a05-419e-ba8c-bbeaee6c56d6)
----
-![Screenshot 2025-06-29 175621](https://github.com/user-attachments/assets/2a3b3ead-4cc9-440e-9d13-e51b0e1722cc)
----
-![Screenshot 2025-06-29 175729](https://github.com/user-attachments/assets/355d6f63-390d-4356-9444-1f9a2ade3fad)
+## WildCard Route Handling
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa1b2e95-8a05-419e-ba8c-bbeaee6c56d6" width="70%"/>
+  <br/><br/>
+  <img src="https://github.com/user-attachments/assets/2a3b3ead-4cc9-440e-9d13-e51b0e1722cc" width="70%"/>
+  <br/><br/>
+
+## MongoDB Compass 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/355d6f63-390d-4356-9444-1f9a2ade3fad" width="70%"/>
+</p>
 ---
 
 ## 📁 Folder Structure
@@ -92,21 +102,18 @@ A full-stack MERN-based financial analytics dashboard designed to help analysts 
 ```bash
 FinancialAnalytics/
 │
-├── Backend/              # Express + MongoDB backend
+├── Backend/              # Node.js + Express backend
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/       # Auth guards, role protection
+│   ├── middleware/       # Auth & role protection
 │   ├── utils/
 │   └── index.ts
 │
-├── Frontend/             # React + Vite + Tailwind frontend
+├── Frontend/             # React + Tailwind + Vite frontend
 │   ├── components/
 │   ├── pages/
 │   ├── hooks/
 │   └── App.tsx
 │
 └── README.md
-
----
-
