@@ -15,6 +15,7 @@ import Unauthorized from "./pages/Unauthorized";
 import PageNotFound from "./pages/PageNotFound";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import UserDashboard from './pages/UserDashboard';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
               <Route path="/" element={<Home/>} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<SignUp />} />
+              <Route path="/user-dashboard" element={<ProtectedRoute allowedRoles={["User"]}><UserDashboard/></ProtectedRoute>}/>
+
                <Route path="/admin-login" element={<AdminLogin />} />
 
                <Route path="/admin-dashboard" element={ <ProtectedRoute allowedRoles={["Admin"]}>

@@ -2,9 +2,11 @@ import React from 'react'
 
 function Unauthorized() {
   return (
-    <div className="min-h-screen flex justify-center items-center text-red-500 text-xl">
-    🚫 You are not authorized to view this page.
-  </div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white px-60 py-80">
+      <h1 className="text-3xl font-bold  text-center text-green-400">🚫 You are not authorized to view this page.</h1>
+    </div>
+    
+  
   )
 }
 
